@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reg.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Payment Page</title>
+  </head>
+  <body>
+    <div class="py-f">
+      <div class="i-g-cm site-logo">
+        <a href="index.html">codeBay Tech</a>
+      </div>
+
+      <h2>Payment Information</h2>
+      <div class="reg-yu">
+        <h2>
+          Your Reference ID for this transaction is:
+          <span id="referenceId"></span>
+          <div class="cpy-cont">
+            <button id="copyButton">
+              <img src="images/copy.svg" alt="Copy Icon" class="icon" />
+            </button>
+            <p>Copy</p>
+          </div>
+        </h2>
+        <p id="copyStatus"></p>
+      </div>
+
+      <p></p>
+
+      <p>
+        Instrusctions: Please copy the provided reference ID to validate your
+        payment.
+      </p>
+
+      <a
+        href="https://paystack.com/pay/basetrade-payment"
+        target="_blank "
+        class="mk-btn"
+        >Make Payment</a
+      >
+    </div>
+    <script src="js/copy.js"></script>
+    <script>
+      // for the reference
+      // Extract the reference ID from the URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const referenceId = urlParams.get("referenceId");
+
+      // Display the reference ID
+      document.getElementById("referenceId").textContent = referenceId;
+
+      // stops here!
+    </script>
+  </body>
+</html>
