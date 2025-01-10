@@ -9,20 +9,24 @@
   "routes": [{ "src": "/(.*)", "dest": "/app.js" }],
   "rewrites": [
     {
-      "source": "/Data-Science",
+      "source": "/data-Science",
       "destination": "/data-science.html"
     },
     {
-      "source": "digital-marketing",
+      "source": "/digital-marketing",
       "destination": "/digital-marketing.html"
     },
     {
-      "source": "graphic-design",
+      "source": "/graphic-design",
       "destination": "/graphic-design.html"
     },
     {
-      "source": "Devvelopper",
+      "source": "/home",
       "destination": "/index.html"
+    },
+    {
+      "source": "/web-development",
+      "destination": "/web-development.html"
     },
     {
       "source": "/payment",
