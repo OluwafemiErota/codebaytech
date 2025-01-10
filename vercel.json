@@ -6,5 +6,27 @@
       "use": "@vercel/node"
     }
   ],
-  "routes": [{ "src": "/(.*)", "dest": "/app.js" }]
+  "routes": [{ "src": "/(.*)", "dest": "/app.js" }],
+  "rewrites": [
+    {
+      "source": "/Data-Science",
+      "destination": "/data-science.html"
+    },
+    {
+      "source": "digital-marketing",
+      "destination": "/digital-marketing.html"
+    },
+    {
+      "source": "graphic-design",
+      "destination": "/graphic-design.html"
+    },
+    {
+      "source": "Devvelopper",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/payment",
+      "destination": "/payment.html"
+    }
+  ]
 }
