@@ -52,20 +52,14 @@ input::placeholder {
 #state {
   flex: 1;
 }
-.signup-form img {
-  border: none;
-  border-radius: 50%;
-  background-color: rgb(197, 147, 147);
-  height: 80px;
-  width: 80px;
-}
+
 .i-g-cm {
   display: flex;
   justify-content: center;
   padding: 10px 0px;
   color: #000 !important;
 }
-.i-g-cm a{
+.i-g-cm a {
   text-decoration: none;
   color: #000 !important;
 }
@@ -203,7 +197,7 @@ select option:disabled {
 }
 
 #copyButton:hover {
-  background-color: #dddada;
+  background-color: #9b95f1;
 }
 
 #copyButton .icon {
@@ -242,7 +236,7 @@ select option:disabled {
 .mk-btn {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #7971ea;
   color: white;
   text-align: center;
   text-decoration: none;
@@ -254,12 +248,21 @@ select option:disabled {
 }
 
 .mk-btn:hover {
-  background-color: #0056b3;
+  background-color: #8d87e4;
 }
 
 .log-py {
-  width: 150px;
+  width: 250px;
 }
 .log-py a {
   width: 100%;
+}
+.log-py img {
+  width: 100%;
+}
+
+@media (max-width: 768px) and (min-width: 200px) {
+  .log-py {
+    width: 150px;
+  }
 }
