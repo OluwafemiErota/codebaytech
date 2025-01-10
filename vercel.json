@@ -2,38 +2,9 @@
   "version": 2,
   "builds": [
     {
-      "src": "index.html",
-      "use": "@vercel/static"
-    },
-    {
       "src": "app.js",
       "use": "@vercel/node"
     }
   ],
-  "routes": [
-    {
-      "src": "/data-Science",
-      "dest": "/data-science.html"
-    },
-    {
-      "src": "/digital-marketing",
-      "dest": "/digital-marketing.html"
-    },
-    {
-      "src": "/graphic-design",
-      "dest": "/graphic-design.html"
-    },
-    {
-      "src": "/home",
-      "dest": "/index.html"
-    },
-    {
-      "src": "/web-development",
-      "dest": "/web-development.html"
-    },
-    {
-      "src": "/payment",
-      "dest": "/payment.html"
-    }
-  ]
+  "routes": [{ "src": "/(.*)", "dest": "/app.js" }]
 }
